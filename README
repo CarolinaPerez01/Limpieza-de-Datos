@@ -1,14 +1,14 @@
-# Proyecto de Limpieza de Datos de Airbnb NYC 2019
+**Proyecto de Limpieza de Datos de Airbnb NYC 2019**
 
-# Realizado por: Carolina Pérez Molina
+**Realizado por: Carolina Pérez Molina**
 
 Este proyecto tiene como objetivo realizar una limpieza exhaustiva del dataset de Airbnb de Nueva York de 2019, eliminando inconsistencias, valores nulos y valores atípicos para poder realizar un análisis más preciso y confiable.
 
-## Descripción del Dataset
+**Descripción del Dataset**
 
 El dataset contiene listados de Airbnb en Nueva York y está compuesto por 16 columnas que incluyen información sobre la ubicación, precios, disponibilidad y reseñas de cada propiedad.
 
-### Columnas Principales
+**Columnas Principales**
 - **id**: Identificador único de la propiedad.
 - **name**: Nombre de la propiedad.
 - **host_id** y **host_name**: Identificador y nombre del anfitrión.
@@ -18,7 +18,7 @@ El dataset contiene listados de Airbnb en Nueva York y está compuesto por 16 co
 - **price**: Precio por noche.
 - **availability_365**: Días de disponibilidad al año.
 
-## Problemas Detectados
+**Problemas Detectados**
 
 Durante la revisión del dataset, se identificaron los siguientes problemas:
 1. Valores nulos en columnas como `name`, `host_name`, y `reviews_per_month`.
@@ -27,7 +27,7 @@ Durante la revisión del dataset, se identificaron los siguientes problemas:
 4. Valores de `availability_365` igual a 0 en múltiples registros.
 5. Formato de fecha inconsistente en la columna `last_review`.
 
-## Pasos de Limpieza Realizados
+**Pasos de Limpieza Realizados**
 
 1. **Relleno de valores nulos**:
    - Los valores nulos en `name` y `host_name` fueron rellenados con `"Unknown"`.
@@ -46,10 +46,10 @@ Durante la revisión del dataset, se identificaron los siguientes problemas:
 5. **Conversión de `last_review` a formato de fecha**:
    - La columna `last_review` fue convertida al formato de fecha (`datetime`) para facilitar el análisis temporal.
 
-## Resultados
+**Resultados**
 
 Después de la limpieza, el dataset contiene datos consistentes y está listo para análisis más profundos. Esta limpieza permite explorar la relación entre precio, disponibilidad y otros factores sin que los valores faltantes o extremos distorsionen los resultados.
 
-## Conclusión
+**Conclusión**
 
 Este trabajo proporciona una base sólida para el análisis de los listados de Airbnb en Nueva York en 2019. Con el dataset limpio, se puede continuar explorando tendencias de precios, patrones de disponibilidad, y otros insights relevantes del mercado de alquileres temporales en la ciudad.
